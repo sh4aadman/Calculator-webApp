@@ -1,5 +1,107 @@
 /* stylesheet */
 
 body {
-    color: blue;
+  font-family: "Poppins", sans-serif;
+  background-color: #17181a;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 345px;
+  height: 750px;
+  padding: 34px;
+  border-radius: 40px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.display {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.display > input {
+  direction: rtl;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="number"] {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.numbers {
+  color: #29a8ff;
+  background-color: #303136;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  border-radius: 16px;
+  width: 62px;
+  border: none;
+}
+
+#clear {
+  font-size: 24px;
+  color: #a5a5a5;
+  background-color: #616161;
+  padding: 12px;
+}
+
+#delete {
+  font-size: 16px;
+  color: #a5a5a5;
+  background-color: #616161;
+}
+
+.button {
+  font-size: 32px;
+  padding: 6px 20px;
+}
+
+.operation {
+  color: #339dff;
+  background-color: #005db2;
+}
+
+#result {
+  color: #b2daff;
+  background-color: #1991ff;
+}
+
+#addition {
+  grid-row: span 2;
+}
+
+/* Specificity Hierarchy : inline > id > class > attributes > elements & pseudo-classes */
+#zero {
+  width: 100%;
+  grid-column: span 2;
 }
