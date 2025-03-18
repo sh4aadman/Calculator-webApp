@@ -15,7 +15,7 @@ body {
   height: 750px;
   padding: 34px;
   border-radius: 40px;
-  border: 1px solid white;
+  border: 2px solid #add8ff;
   display: flex;
   flex-direction: column;
   gap: 75px;
@@ -31,22 +31,38 @@ body {
 }
 
 .display > input {
-  direction: rtl;
   font-family: "Poppins", sans-serif;
 }
 
+input[type="text"] {
+  text-align: end;
+  color: #818181;
+  background-color: transparent;
+  font-size: 24px;
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
 input[type="number"] {
-    width: 100%;
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 48px;
+  direction: rtl;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 48px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
 }
 
 .input {
